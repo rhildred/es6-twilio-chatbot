@@ -11,8 +11,7 @@ Marking
 
 |Element|Out Of|
 |---|---|
-|get a game or choose your own adventure in es6| 50|
-|multiplayer - each person plays their own game against the bot.| 10|
+|get a game or choose your own adventure in es6| 60|
 |count case and if statements|2/3 each up to 20 points|
 |spelling and grammar|10|
 |on time|10|
