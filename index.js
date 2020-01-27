@@ -1,6 +1,6 @@
-import express from 'express';
-import bodyParser  from "body-parser";
-import Game  from "./Game";
+const express = require('express');
+const bodyParser = require("body-parser");
+const Game = require("./Game");
 
 // Create a new express application instance
 const app = express();

@@ -7,7 +7,7 @@ const GameState = Object.freeze({
     TOAST: Symbol("toast")
 });
 
-export default class Game{
+module.exports = class Game{
     constructor(){
         this.stateCur = GameState.WELCOMING;
     }
@@ -49,6 +49,13 @@ export default class Game{
     
                 }
                 break;
+            case GameState.TOAST:
+                if(sInput.toLowerCase().match("toast")){
+                    sReply = "you enter a new world of adventure ... game over";
+                    this.stateCur = GameState.WELCOMING;
+                }else{
+                    sReply = "the phone lines are down ... Would you like some toast perhaps?";
+                }
         }
         return([sReply]);
     }
