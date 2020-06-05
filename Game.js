@@ -17,7 +17,7 @@ module.exports = class Game{
         let sReply = "";
         switch(this.stateCur){
             case GameState.WELCOMING:
-                sReply = "It is a dark and rainy night. Bang! You have a flat tire. Too bad you don't have a spare. Do you wait or go to the spooky mansion for help?";
+                sReply = "It is a dark and rainy night. Bang! You have a flat tire. Too bad you don't have a spare. Do you WAIT or GO to the spooky mansion for help?";
                 this.stateCur = GameState.FLAT;
                 break;
             case GameState.FLAT:
