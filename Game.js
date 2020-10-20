@@ -7,7 +7,7 @@ const GameState = Object.freeze({
     TOAST: Symbol("toast")
 });
 
-module.exports = class Game{
+export default class Game{
     constructor(){
         this.stateCur = GameState.WELCOMING;
     }

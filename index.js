@@ -1,6 +1,6 @@
-const express = require('express');
-const bodyParser = require("body-parser");
-const Game = require("./Game");
+import express from 'express';
+import bodyParser from 'body-parser';
+import Game from './Game.js';
 
 // Create a new express application instance
 const app = express();
@@ -31,6 +31,6 @@ app.post("/sms", (req, res) =>{
 
 });
 
-var port = process.env.PORT || parseInt(process.argv.pop()) || 3000;
+var port = process.env.PORT || parseInt(process.argv.pop()) || 3001;
 
 app.listen(port, () => console.log('Example app listening on port ' + port + '!'));
